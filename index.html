@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAO Dashboard | สำนักงานการตรวจเงินแผ่นดิน</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Prompt', 'sans-serif'],
+              serif: ['Sarabun', 'sans-serif'],
+            },
+            colors: {
+              sao: {
+                50: '#fff7ed',   /* Orange 50 */
+                100: '#ffedd5',  /* Orange 100 */
+                200: '#fed7aa',  /* Orange 200 */
+                300: '#fdba74',  /* Orange 300 */
+                400: '#fb923c',  /* Orange 400 */
+                500: '#f97316',  /* Orange 500 */
+                600: '#ea580c',  /* Orange 600 - Primary Brand */
+                700: '#c2410c',  /* Orange 700 */
+                800: '#9a3412',  /* Orange 800 */
+                900: '#7c2d12',  /* Orange 900 - Deep Rust/Terracotta */
+                950: '#431407',  /* Orange 950 - Very Dark */
+              },
+              gold: {
+                50: '#fbf9f1',
+                100: '#f5f0db',
+                200: '#ebdeaf',
+                300: '#dfc57d',
+                400: '#d4aa4f',
+                500: '#c5902d', // Official Thai Gold
+                600: '#aa7424',
+                700: '#885820',
+                800: '#704721',
+                900: '#5e3c20',
+                950: '#351e0f',
+              }
+            },
+            backgroundImage: {
+              'thai-pattern': "url('https://www.transparenttextures.com/patterns/black-scales.png')",
+              'paper-texture': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Prompt', sans-serif;
+        background-color: #fff7ed; /* Light Orange Background */
+      }
+      .font-official {
+        font-family: 'Sarabun', sans-serif;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #fdba74; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fb923c; 
+      }
+      
+      .bg-glass {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
